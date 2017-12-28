@@ -39,10 +39,9 @@ def validate_command(to_parse):
         return to_parse
 
 
-
 def view_data(data):
-    pprint.pprint(data.dict(), depth=2)
+    pprint.pprint(data.dict(), depth=2, indent=4)
 
 
 def view_list(data):
-    pprint.pprint([item.dict() for item in data], depth=2)
+    pprint.pprint([item.dict() for item in data], depth=2, indent=4)
